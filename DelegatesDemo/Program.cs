@@ -11,7 +11,7 @@ namespace DelegatesDemo
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Delegates Operation!");
-            Console.WriteLine("Enter 1. to print sinle Delegates\n");
+            Console.WriteLine("Enter 1. to print sinle Delegates\nEnter 2.to print Multi Cast Delegates\n");
             bool flag = true;
             while (flag)
             {
@@ -24,7 +24,10 @@ namespace DelegatesDemo
                         single.Delegates();
                         break;
 
-
+                        case 2:
+                        MultiCastDelegates mul=new MultiCastDelegates();
+                        mul.MulDelegates();
+                        break ;
 
                 }
             }
